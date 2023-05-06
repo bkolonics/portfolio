@@ -4,8 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        "background-color": "#f0f7ee",
-        "violet-color": "#8390fa",
+        "mint-cream": "#f0f7ee",
+        "vista-blue": "#8390fa",
+      },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        }
+      },
+      animation: {
+        "fade-in": "fade-in 0.5s ease-out",
       },
     },
   },
