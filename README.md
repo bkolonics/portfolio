@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce23a961-e5e4-4f80-8e99-68098d08657d/deploy-status)](https://app.netlify.com/sites/stellular-babka-bb8f86/deploys)
