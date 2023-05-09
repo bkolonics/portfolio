@@ -1,9 +1,9 @@
-import {Widget} from "./Components/Widget";
+import { Navbar } from "./Components/Navbar";
 
 function App() {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <Widget />
+      <div className="flex">
+        <Navbar />
       </div>
     );
 }
