@@ -23,7 +23,7 @@ export function Description({age}: DescriptionProps) {
             <img
               src={photo}
               alt="photo"
-              className="rounded-full w-6/12 justify-center items-center block mx-auto border-8 border-Glaucous shadow-2xl"
+              className="rounded-image w-6/12 justify-center items-center block mx-auto xl:border-image border-mobile border-Glaucous shadow-2xl"
             />
           </div>
           <div className="lg:w-1/2">
