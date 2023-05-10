@@ -1,10 +1,18 @@
+import { Description } from "./Components/Description";
 import { Navbar } from "./Components/Navbar";
 
 function App() {
     return (
-      <div className="flex">
-        <Navbar />
+      <>
+      <div className="flex flex-col h-screen">
+        <div className="flex">
+          <Navbar />
+        </div>
+        <div className="flex flex-1 justify-center items-center">
+            <Description />
+        </div>
       </div>
+      </>
     );
 }
 

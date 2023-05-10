@@ -6,6 +6,7 @@ export default {
       colors: {
         "Platinum": "#dae3e5",
         "Glaucous": "#507DBC",
+        "Columbia-blue": "#BBD1EA",
       },
       keyframes: {
         "fade-in": {
