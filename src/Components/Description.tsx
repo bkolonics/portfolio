@@ -18,7 +18,7 @@ export function Description({age}: DescriptionProps) {
     age = calculateMyAge();
     return (
       <>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">
             <img
               src={photo}
