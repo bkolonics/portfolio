@@ -4,11 +4,11 @@ export function Navbar() {
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
         <div className="mb-2 sm:mb-0">
-          <a href="#" className="text-5xl text-Glaucous">
+          <a href="#" className="md:text-5xl text-3xl text-Glaucous">
             Bence Kolonics
           </a>
         </div>
-        <div className="flex sm:max-2xl:gap-5 justify-evenly">
+        <div className="flex sm:gap-5 justify-evenly">
           <a href="#" className="text-lg text-Glaucous">
             Resume
           </a>
