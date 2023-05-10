@@ -27,10 +27,10 @@ export function Description({age}: DescriptionProps) {
             />
           </div>
           <div className="lg:w-1/2">
-            <h1 className="text-3xl lg:text-4xl font-bold text-center">
+            <h1 className="text-3xl lg:text-4xl font-bold text-center mt-7 lg:mt-0">
               Hi, I'm <span className="text-Glaucous">Bence</span>
             </h1>
-            <h1 className="text-justify md:m-20 m-5">
+            <h1 className="text-justify xl:m-20 m-5">
               <span className="text-2xl lg:text-3xl font-semibold text-center">
                 I'm a <span className="text-Glaucous"> {age}</span> years old
                 Developer. Molestiae tenetur ipsum voluptas qui rerum
