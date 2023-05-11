@@ -4,9 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "Platinum": "#dae3e5",
+        "Platinum": "#DAE3E5",
         "Glaucous": "#507DBC",
         "Columbia-blue": "#BBD1EA",
+        "Powder-blue": "#A1C6EA",
       },
       keyframes: {
         "fade-in": {
