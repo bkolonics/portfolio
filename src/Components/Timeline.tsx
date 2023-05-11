@@ -7,11 +7,11 @@ interface TimelineProps {
 function TimelineInput({title, date, description}: TimelineProps) {
     return (
       <>
-        <div className="mb-3 text-Powder-blue">{title}</div>
-        <div className="mb-3 text-Columbia-blue">
+        <div className="mb-3 text-xl text-Glaucous font-semibold">{title}</div>
+        <div className="flex mb-3 text-Glaucous justify-end">
           <p>{date}</p>
         </div>
-        <div className="mb-3">
+        <div className="mb-24 text-justify">
           <p>{description}</p>
         </div>
       </>
@@ -22,7 +22,7 @@ export function Timeline() {
     return (
       <>
         <div className="flex flex-col w-2/5">
-          <h1 className="flex text-2xl justify-center lg:text-3xl font-semibold my-10 text-Glaucous">
+          <h1 className="flex text-2xl justify-center lg:text-3xl font-bold my-10 text-Glaucous">
             Timeline
           </h1>
           <TimelineInput

@@ -8,6 +8,7 @@ export default {
         "Glaucous": "#507DBC",
         "Columbia-blue": "#BBD1EA",
         "Powder-blue": "#A1C6EA",
+        "Jet": "#2A2B2A",
       },
       keyframes: {
         "fade-in": {
