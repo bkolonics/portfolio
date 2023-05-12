@@ -37,12 +37,12 @@ function ProjectsInput({title, category, status, description}: ProjectsProps) {
 export function Projects() {
     return (
       <>
-      <div>
-        <div className="flex justify-center">
+        <div id="projects">
+          <div className="flex justify-center">
             <div className="text-2xl lg:text-4xl font-bold text-Glaucous mb-10">
-                Projects
+              Projects
             </div>
-        </div>
+          </div>
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
             <ProjectsInput
               title="High School"
@@ -105,7 +105,7 @@ export function Projects() {
                 nisl."
             />
           </div>
-          </div>
+        </div>
       </>
     );
 }

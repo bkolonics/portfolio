@@ -1,4 +1,5 @@
 import github_logo from "../assets/github_logo.svg";
+import { Link } from "react-scroll";
 
 export function Navbar() {
     return (
@@ -12,12 +13,26 @@ export function Navbar() {
           <a href="#" className="text-lg text-Glaucous">
             Resume
           </a>
-          <a href="#" className="text-lg text-Glaucous">
-            Experience
-          </a>
-          <a href="#" className="text-lg text-Glaucous">
+          <Link
+            href=""
+            className="text-lg text-Glaucous"
+            to="timeline"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Timeline
+          </Link>
+          <Link
+            href=""
+            className="text-lg text-Glaucous"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             Projects
-          </a>
+          </Link>
           <a href="#" className="fill-Glaucous">
             <svg
               width="30"
