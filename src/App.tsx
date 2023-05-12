@@ -1,6 +1,7 @@
 import { Description } from "./Components/Description";
 import { Footer } from "./Components/Footer";
 import { Navbar } from "./Components/Navbar";
+import { Projects } from "./Components/Projects";
 import { Timeline } from "./Components/Timeline";
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
           </div>
           <div className="flex justify-center">
             <Timeline />
+          </div>
+          <div className="flex justify-center mx-36">
+            <Projects />
           </div>
           <div>
             <Footer year={0} />
