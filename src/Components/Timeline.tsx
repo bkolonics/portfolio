@@ -22,7 +22,7 @@ export function Timeline() {
     return (
       <>
         <div className="flex flex-col lg:w-2/5 w-11/12">
-          <h1 className="flex text-2xl justify-center lg:text-3xl font-bold my-10 text-Glaucous">
+          <h1 className="flex text-2xl justify-center lg:text-4xl font-bold my-10 text-Glaucous">
             Timeline
           </h1>
           <TimelineInput
