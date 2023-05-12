@@ -5,6 +5,15 @@ interface ProjectsProps {
     description: string;
 }
 
+// categories = [
+//     "Sysadmin",
+//     "Development",
+//     "Cybersecurity",
+//     "DevOps",
+//     "Other"
+// ]
+
+
 function ProjectsInput({title, category, status, description}: ProjectsProps) {
     return (
       <>
