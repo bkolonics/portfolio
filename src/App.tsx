@@ -17,7 +17,7 @@ function App() {
           <div className="flex justify-center">
             <Timeline />
           </div>
-          <div className="flex justify-center mx-36">
+          <div className="flex justify-center mx-5 md:mx-10 xl:mx-36">
             <Projects />
           </div>
           <div>

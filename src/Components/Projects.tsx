@@ -25,7 +25,7 @@ function ProjectsInput({title, category, status, description}: ProjectsProps) {
 export function Projects() {
     return (
         <>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
             <ProjectsInput
                 title="High School"
                 category="Category"
