@@ -17,7 +17,7 @@ interface ProjectsProps {
 function ProjectsInput({title, category, status, description}: ProjectsProps) {
     return (
       <>
-        <div className="bg-Columbia-blue rounded-3xl p-3">
+        <div className="bg-Columbia-blue rounded-3xl p-3 dark:bg-Jet dark:border-Columbia-blue dark:border-2">
           <div className="flex mb-3 items-end justify-around text-Glaucous font-semibold">
             <div className="text-xl justify-start">{title}</div>
             <div className="text-sm justify-end">{category}</div>
@@ -26,7 +26,7 @@ function ProjectsInput({title, category, status, description}: ProjectsProps) {
             <span className="font-semibold">Status: </span>
             {status}
           </div>
-          <div className="mb-24 text-justify">
+          <div className="mb-24 text-justify dark:text-Columbia-blue">
             <p>{description}</p>
           </div>
         </div>

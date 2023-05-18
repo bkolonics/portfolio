@@ -1,6 +1,10 @@
 import github_logo from "../assets/github_logo.svg";
 import { Link } from "react-scroll";
 
+function ToggleDarkMode() {
+  document.documentElement.classList.toggle("dark");
+}
+
 export function Navbar() {
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
@@ -10,6 +14,11 @@ export function Navbar() {
           </a>
         </div>
         <div className="flex sm:gap-5 justify-evenly">
+          <button>
+            <a href="#" onClick={ToggleDarkMode} className="text-lg text-Glaucous">
+              Dark
+            </a>
+          </button>
           <a href="#" className="text-lg text-Glaucous">
             Resume
           </a>

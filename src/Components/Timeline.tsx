@@ -11,7 +11,7 @@ function TimelineInput({title, date, description}: TimelineProps) {
         <div className="flex mb-3 text-Glaucous justify-end">
           <p>{date}</p>
         </div>
-        <div className="mb-24 text-justify">
+        <div className="mb-24 text-justify dark:text-Columbia-blue">
           <p>{description}</p>
         </div>
       </>

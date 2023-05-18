@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "Platinum": "#DAE3E5",
-        "Glaucous": "#507DBC",
+        Platinum: "#DAE3E5",
+        Glaucous: "#507DBC",
         "Columbia-blue": "#BBD1EA",
         "Powder-blue": "#A1C6EA",
-        "Jet": "#2A2B2A",
+        Jet: "#2A2B2A",
       },
       keyframes: {
         "fade-in": {
@@ -33,5 +33,6 @@ export default {
       },
     },
   },
+  darkMode: "class",
   plugins: [],
 };
