@@ -10,12 +10,10 @@ function ToggleDarkMode() {
 }
 
 function ToggleButton() {
-  // get the current state of dark mode in real time
   const [darkMode, setDarkMode] = useState(
     document.documentElement.classList.contains("dark")
   );
   console.log(darkMode);
-  //remove 
   return (
     <>
       {darkMode ? (
@@ -43,7 +41,7 @@ export function Navbar() {
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
         <div className="mb-2 sm:mb-0">
-          <a href="#" className="md:text-5xl text-3xl text-Glaucous px-5">
+          <a href="#" className="lg:text-5xl text-3xl text-Glaucous px-5">
             Bence Kolonics
           </a>
           <button className="text-lg text-Glaucous sm:hidden">
