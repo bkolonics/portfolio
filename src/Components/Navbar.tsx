@@ -43,12 +43,15 @@ export function Navbar() {
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
         <div className="mb-2 sm:mb-0">
-          <a href="#" className="md:text-5xl text-3xl text-Glaucous">
+          <a href="#" className="md:text-5xl text-3xl text-Glaucous px-5">
             Bence Kolonics
           </a>
+          <button className="text-lg text-Glaucous sm:hidden">
+            <ToggleButton />
+          </button>
         </div>
         <div className="flex sm:gap-5 justify-evenly">
-          <button className="text-lg text-Glaucous">
+          <button className="text-lg text-Glaucous hidden sm:block">
             <ToggleButton />
           </button>
           <a href="#" className="text-lg text-Glaucous">
