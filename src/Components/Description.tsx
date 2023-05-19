@@ -77,14 +77,14 @@ export function Description({age}: DescriptionProps) {
     age = calculateMyAge();
     return (
       <>
-        <div className="flex flex-col lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center overflow-hidden">
           <div className="lg:w-1/2">
             <AnimateLeft>
-            <img
-              src={photo}
-              alt="photo"
-              className="rounded-image w-6/12 justify-center items-center block mx-auto xl:border-image border-mobile border-Glaucous shadow-2xl"
-            />
+              <img
+                src={photo}
+                alt="photo"
+                className="rounded-image w-6/12 justify-center items-center block mx-auto xl:border-image border-mobile border-Glaucous shadow-2xl"
+              />
             </AnimateLeft>
           </div>
           <div className="lg:w-1/2">
