@@ -1,3 +1,6 @@
+import React, { FC, PropsWithChildren, useEffect, useRef, useState, RefObject } from "react";
+
+
 interface ProjectsProps {
     title: string;
     category: string;
@@ -12,6 +15,95 @@ interface ProjectsProps {
 //     "DevOps",
 //     "Other"
 // ]
+
+function useElementOnScreen(ref: RefObject<Element>, rootMargin = "0px") {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsIntersecting(entry.isIntersecting);
+      },
+      { rootMargin }
+    );
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+  return isIntersecting;
+}
+
+const AnimateRight: FC<PropsWithChildren> = ({ children }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useElementOnScreen(ref);
+  return (
+    <div
+      ref={ref}
+      style={{
+        opacity: onScreen ? 1 : 0,
+        translate: onScreen ? "none" : "10rem 0",
+        transition: "600ms ease-in-out",
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const AnimateLeft: FC<PropsWithChildren> = ({ children }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useElementOnScreen(ref);
+  return (
+    <div
+      ref={ref}
+      style={{
+        opacity: onScreen ? 1 : 0,
+        translate: onScreen ? "none" : "-10rem 0",
+        transition: "600ms ease-in-out",
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const AnimateUp: FC<PropsWithChildren> = ({ children }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useElementOnScreen(ref);
+  return (
+    <div
+      ref={ref}
+      style={{
+        opacity: onScreen ? 1 : 0,
+        translate: onScreen ? "none" : "0 -10rem",
+        transition: "600ms ease-in-out",
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const AnimateDown: FC<PropsWithChildren> = ({ children }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const onScreen = useElementOnScreen(ref);
+  return (
+    <div
+      ref={ref}
+      style={{
+        opacity: onScreen ? 1 : 0,
+        translate: onScreen ? "none" : "0 10rem",
+        transition: "600ms ease-in-out",
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 
 function ProjectsInput({title, category, status, description}: ProjectsProps) {
@@ -43,67 +135,79 @@ export function Projects() {
               Projects
             </div>
           </div>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
-            <ProjectsInput
-              title="High School"
-              category="Category"
-              status="On-going"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 overflow-hidden">
+            <AnimateLeft>
+              <ProjectsInput
+                title="High School"
+                category="Category"
+                status="On-going"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
                 aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
                 placerat, diam quam mattis lorem, quis aliquet massa sapien sed
                 nisl."
-            />
-            <ProjectsInput
-              title="High School"
-              category="Category"
-              status="On-going"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              />
+            </AnimateLeft>
+            <AnimateUp>
+              <ProjectsInput
+                title="High School"
+                category="Category"
+                status="On-going"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
                 aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
                 placerat, diam quam mattis lorem, quis aliquet massa sapien sed
                 nisl."
-            />
-            <ProjectsInput
-              title="High School"
-              category="Category"
-              status="On-going"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              />
+            </AnimateUp>
+            <AnimateRight>
+              <ProjectsInput
+                title="High School"
+                category="Category"
+                status="On-going"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
                 aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
                 placerat, diam quam mattis lorem, quis aliquet massa sapien sed
                 nisl."
-            />
-            <ProjectsInput
-              title="High School"
-              category="Category"
-              status="On-going"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              />
+            </AnimateRight>
+            <AnimateLeft>
+              <ProjectsInput
+                title="High School"
+                category="Category"
+                status="On-going"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
                 aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
                 placerat, diam quam mattis lorem, quis aliquet massa sapien sed
                 nisl."
-            />
-            <ProjectsInput
-              title="High School"
-              category="Cybersecurity"
-              status="On-going"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              />
+            </AnimateLeft>
+            <AnimateDown>
+              <ProjectsInput
+                title="High School"
+                category="Cybersecurity"
+                status="On-going"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
                 aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
                 placerat, diam quam mattis lorem, quis aliquet massa sapien sed
                 nisl."
-            />
-            <ProjectsInput
-              title="High School"
-              category="Category"
-              status="On-going"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              />
+            </AnimateDown>
+            <AnimateRight>
+              <ProjectsInput
+                title="High School"
+                category="Category"
+                status="On-going"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
                 aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
                 placerat, diam quam mattis lorem, quis aliquet massa sapien sed
                 nisl."
-            />
+              />
+            </AnimateRight>
           </div>
         </div>
       </>
