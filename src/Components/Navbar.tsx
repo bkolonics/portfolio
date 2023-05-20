@@ -4,6 +4,7 @@ import { FiMoon, FiSun } from "react-icons/fi";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { useState } from "react";
 import { IconContext } from "react-icons";
+import { useTranslation } from "react-i18next";
 
 function ToggleDarkMode() {
   document.documentElement.classList.toggle("dark");
@@ -37,18 +38,38 @@ function ToggleButton() {
   );
 }
 
+function ToggleLanguage() {
+  const { i18n } = useTranslation();
+  return (
+    <button
+      onClick={() => {
+        i18n.changeLanguage(i18n.language === "en" ? "fr" : "en");
+      }}
+    >
+      {i18n.language === "en" ? "FR" : "EN"}
+    </button>
+  );
+}
+
+
 export function Navbar() {
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
         <div className="mb-2 sm:mb-0">
-          <a href="#" className="lg:text-5xl text-3xl text-Glaucous px-5">
+          <a href="#" className="lg:text-5xl text-3xl text-Glaucous px-2">
             Bence Kolonics
           </a>
-          <button className="text-lg text-Glaucous sm:hidden">
+          <button className="text-lg text-Glaucous px-2 sm:hidden">
             <ToggleButton />
+          </button>
+          <button className="text-lg text-Glaucous px-2 sm:hidden">
+            <ToggleLanguage></ToggleLanguage>
           </button>
         </div>
         <div className="flex sm:gap-5 justify-evenly">
+          <div className="text-lg text-Glaucous hidden sm:block">
+            <ToggleLanguage></ToggleLanguage>
+          </div>
           <button className="text-lg text-Glaucous hidden sm:block">
             <ToggleButton />
           </button>
