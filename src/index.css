@@ -5,3 +5,7 @@
 body * {
     @apply transition-colors duration-1000;
 }
+
+#noanimate {
+    @apply transition-colors duration-0;
+}

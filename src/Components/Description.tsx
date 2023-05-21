@@ -1,6 +1,7 @@
 import photo from '../assets/photo.jpg';
 import { FC, PropsWithChildren, useEffect, useRef, useState } from "react";
 import { RefObject } from "react";
+import { useTranslation } from "react-i18next";
 
 
 function useElementOnScreen(ref: RefObject<Element>, rootMargin = "0px") {
@@ -73,7 +74,7 @@ function calculateMyAge() {
 }
 
 export function Description({age}: DescriptionProps) {
-
+    const { t } = useTranslation();
     age = calculateMyAge();
     return (
       <>
@@ -94,12 +95,7 @@ export function Description({age}: DescriptionProps) {
               </h1>
               <h1 className="text-justify xl:m-20 m-5">
                 <span className="text-2xl lg:text-3xl font-semibold text-center dark:text-Columbia-blue">
-                  I'm a <span className="text-Glaucous"> {age}</span> years old
-                  Developer. Molestiae tenetur ipsum voluptas qui rerum
-                  praesentium dolores. Omnis occaecati quod ea a. Veritatis
-                  animi laudantium delectus autem quia. Qui totam aut itaque et
-                  voluptatem eum illo odit. Voluptatem nostrum impedit
-                  reprehenderit. Nesciunt distinctio enim illo et.
+                  {t("greeting")}
                 </span>
               </h1>
             </AnimateRight>
