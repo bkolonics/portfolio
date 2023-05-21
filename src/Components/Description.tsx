@@ -1,4 +1,4 @@
-import photo from '../assets/photo.jpg';
+import photo from '../assets/photo.webp';
 import { FC, PropsWithChildren, useEffect, useRef, useState } from "react";
 import { RefObject } from "react";
 import { useTranslation } from "react-i18next";
