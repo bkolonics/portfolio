@@ -1,4 +1,3 @@
-import github_logo from "../assets/github_logo.svg";
 import { Link } from "react-scroll";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { BsLinkedin, BsGithub } from "react-icons/bs";

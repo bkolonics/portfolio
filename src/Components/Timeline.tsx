@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, RefObject } from "react";
+import { useEffect, useRef, useState, RefObject } from "react";
 import { FC, PropsWithChildren } from "react";
 
 function useElementOnScreen(ref: RefObject<Element>, rootMargin = "0px") {

@@ -15,7 +15,7 @@ function App() {
               <Navbar />
             </div>
             <div className="flex flex-1 justify-center items-center lg:p-14">
-              <Description age={0} />
+              <Description />
             </div>
             <div className="flex justify-center">
               <Timeline />

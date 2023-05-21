@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-scroll": "^1.8.7",
     "autoprefixer": "^10.4.14",
     "i18next": "^22.5.0",
     "postcss": "^8.4.23",

@@ -60,10 +60,6 @@ const AnimateLeft: FC<PropsWithChildren> = ({ children }) => {
 };
 
 
-interface DescriptionProps {
-    age: number;
-}
-
 function calculateMyAge() {
     const today = new Date();
     const birthDate = new Date(2001, 3, 11);
@@ -73,9 +69,8 @@ function calculateMyAge() {
     return age;
 }
 
-export function Description({age}: DescriptionProps) {
+export function Description() {
     const { t } = useTranslation();
-    age = calculateMyAge();
     return (
       <>
         <div className="flex flex-col lg:flex-row items-center overflow-hidden">
@@ -95,6 +90,7 @@ export function Description({age}: DescriptionProps) {
               </h1>
               <h1 className="text-justify xl:m-20 m-5">
                 <span className="text-2xl lg:text-3xl font-semibold text-center dark:text-Columbia-blue">
+                  I'm a {calculateMyAge()} years old student from. I
                   {t("greeting")}
                 </span>
               </h1>
