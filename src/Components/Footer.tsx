@@ -8,7 +8,7 @@ function calculateCurrentYear() {
 
 }
 
-export function Footer({year}: FooterProps) {
+export default function Footer({year}: FooterProps) {
     year = calculateCurrentYear();
     return (
       <>

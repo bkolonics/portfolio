@@ -126,7 +126,7 @@ function ProjectsInput({title, category, status, description}: ProjectsProps) {
     );
 }
 
-export function Projects() {
+export default function Projects() {
     return (
       <>
         <div id="projects">

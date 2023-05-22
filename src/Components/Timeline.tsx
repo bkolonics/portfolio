@@ -63,7 +63,7 @@ function TimelineInput({title, date, description}: TimelineProps) {
     );
 }
 
-export function Timeline() {
+export default function Timeline() {
     return (
       <>
         <div className="flex flex-col lg:w-2/5 w-11/12">

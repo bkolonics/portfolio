@@ -74,7 +74,7 @@ function calculateMyAge() {
     return age;
 }
 
-export function Description() {
+export default function Description() {
     const { t } = useTranslation();
     return (
       <>
@@ -85,6 +85,8 @@ export function Description() {
                 src={photo}
                 alt="photo"
                 className="rounded-image w-6/12 justify-center items-center block mx-auto xl:border-image border-mobile border-Glaucous shadow-2xl"
+                width={1380}
+                height={920}
                 srcSet={`${photoS} 256w,
                         ${photoM} 690w,
                         ${photoL} 980w,

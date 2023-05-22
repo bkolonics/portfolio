@@ -13,7 +13,7 @@ function ToggleButton() {
   const [darkMode, setDarkMode] = useState(
     document.documentElement.classList.contains("dark")
   );
-  console.log(darkMode);
+  // console.log(darkMode);
   return (
     <>
       {darkMode ? (
@@ -60,7 +60,7 @@ function ToggleLanguage() {
 }
 
 
-export function Navbar() {
+export default function Navbar() {
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
         <div className="mb-2 sm:mb-0">
