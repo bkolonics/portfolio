@@ -37,7 +37,7 @@ function App() {
           <div className="flex">
             <Navbar />
           </div>
-          <div className="flex flex-1 justify-center items-center lg:p-14">
+          <div className="flex flex-1 justify-center items-center lg:p-14 min-h-[750px]">
             <Description />
           </div>
           <div className="flex justify-center">
