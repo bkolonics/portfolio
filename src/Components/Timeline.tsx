@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, RefObject } from "react";
 import { FC, PropsWithChildren } from "react";
+import { useTranslation } from "react-i18next";
 
 function useElementOnScreen(ref: RefObject<Element>, rootMargin = "0px") {
   const [isIntersecting, setIsIntersecting] = useState(true);
@@ -64,6 +65,7 @@ function TimelineInput({title, date, description}: TimelineProps) {
 }
 
 export default function Timeline() {
+  const { t } = useTranslation();
     return (
       <>
         <div className="flex flex-col lg:w-2/5 w-11/12">
@@ -71,7 +73,7 @@ export default function Timeline() {
             className="flex text-2xl justify-center lg:text-4xl font-bold my-10 text-Glaucous"
             id="timeline"
           >
-            Timeline
+            {t("Timeline")}
           </h1>
           <TimelineInput
             title="High School"

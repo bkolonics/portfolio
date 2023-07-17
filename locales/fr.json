@@ -1,6 +1,6 @@
 {
   "name" : "Salut, je m'appelle <span class='text-Glaucous'>Bence</span>",
-  "greeting": "Je suis un <span class='text-Glaucous'>étudiant français en Ecole de commerce</span> de <span class='text-Glaucous'>22 ans</span>. J'ai toujours aimé créer des choses avec des ordinateurs. Cela fait maintenant plus de <span class='text-Glaucous'>10 ans</span> que je crée des applications avec du <span class='text-Glaucous'>code</span>. Je m'intéresse à tous les domaines de l'informatique. Actuellement je suis en train d'apprendre <span class='text-Glaucous'>Kubernetes</span> pour mieux gérer mon infrastrucure. Je suis également un grand fan du <span class='text-Glaucous'>mouvement du logiciel libre</span>.",
+  "description": "Je suis un <span class='text-Glaucous'>étudiant français en Ecole de commerce</span> de <span class='text-Glaucous'>{{age}} ans</span>. J'ai toujours aimé créer des choses avec des ordinateurs. Cela fait maintenant plus de <span class='text-Glaucous'>10 ans</span> que je crée des applications avec du <span class='text-Glaucous'>code</span>. Je m'intéresse à tous les domaines de l'informatique. Actuellement je suis en train d'apprendre <span class='text-Glaucous'>Kubernetes</span> pour mieux gérer mon infrastrucure. Je suis également un grand fan du <span class='text-Glaucous'>mouvement du logiciel libre</span>.",
   "buttonText": "FR",
   "Resume": "CV",
   "Timeline": "Chronologie",
