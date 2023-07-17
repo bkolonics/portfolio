@@ -65,14 +65,14 @@ const AnimateLeft: FC<PropsWithChildren> = ({ children }) => {
 };
 
 
-function calculateMyAge() {
-    const today = new Date();
-    const birthDate = new Date(2001, 3, 11);
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
-    return age;
-}
+// function calculateMyAge() {
+//     const today = new Date();
+//     const birthDate = new Date(2001, 3, 11);
+//     let age = today.getFullYear() - birthDate.getFullYear();
+//     const m = today.getMonth() - birthDate.getMonth();
+//     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
+//     return age;
+// }
 
 export default function Description() {
     const { t } = useTranslation();
@@ -104,19 +104,20 @@ export default function Description() {
             <AnimateRight>
               <h1
                 dangerouslySetInnerHTML={{
-                  __html: t("name", {
-                    interpolation: { escapeValue: false },
-                  }),
+                  __html:
+                    t("name", {
+                      interpolation: { escapeValue: false },
+                    }) || "Something went wrong... please refresh the page",
                 }}
-                 className="text-3xl lg:text-4xl font-bold text-center mt-7 lg:mt-0 dark:text-Columbia-blue"
-              >
-              </h1>
+                className="text-3xl lg:text-4xl font-bold text-center mt-7 lg:mt-0 dark:text-Columbia-blue"
+              ></h1>
               <h1 className="text-justify xl:m-20 m-5">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: t("greeting", {
-                      interpolation: { escapeValue: false },
-                    }),
+                    __html:
+                      t("greeting", {
+                        interpolation: { escapeValue: false },
+                      }) || "Something went wrong... please refresh the page",
                   }}
                   className="text-2xl lg:text-3xl font-semibold text-center dark:text-Columbia-blue"
                 ></span>
