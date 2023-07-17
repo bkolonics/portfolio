@@ -1,4 +1,9 @@
 {
-  "greeting": "EN Nulla quidem sit sed aspernatur omnis aut omnis accusamus. Facere ut sed et recusandae nihil. Eos rerum aut saepe consequatur possimus eveniet ut. Adipisci animi porro voluptatem ab cum. Dolores rerum et dolores ea et unde. Ipsam eos ut ducimus ut in. Sed provident aut assumenda numquam debitis minus dolor porro. Maiores quisquam quod eos ea numquam incidunt. Distinctio tempore",
-  "buttonText": "EN"
+  "name": "Hi, I'm <span class='text-Glaucous'>Bence</span>",
+  "greeting": "I'm a <span class='text-Glaucous'>22</span> years old <span class='text-Glaucous'>French business student</span>. I always loved to create things with computers. It's been more than <span class='text-Glaucous'>10 years</span> now that I'm building apps with <span class='text-Glaucous'>code</span>. I'm interested in all fields of computer science. I'm currently learning <span class='text-Glaucous'>Kubernetes</span> to better manage my own infrastrucure. I'm also a big fan of <span class='text-Glaucous'>Open Source Software</span>.",
+  "buttonText": "EN",
+  "Resume": "Resume",
+  "Timeline": "Timeline",
+  "Projects": "Projects"
+
 }

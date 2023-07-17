@@ -61,6 +61,7 @@ function ToggleLanguage() {
 
 
 export default function Navbar() {
+   const { t } = useTranslation();
     return (
       <nav className="font-sans flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 sm:items-baseline w-full">
         <div className="mb-2 sm:mb-0">
@@ -82,7 +83,7 @@ export default function Navbar() {
             <ToggleButton />
           </button>
           <a href="#" className="text-lg text-Glaucous">
-            Resume
+            {t("Resume")}
           </a>
           <Link
             href=""
@@ -92,7 +93,7 @@ export default function Navbar() {
             smooth={true}
             duration={500}
           >
-            Timeline
+            {t("Timeline")}
           </Link>
           <Link
             href=""
@@ -102,9 +103,12 @@ export default function Navbar() {
             smooth={true}
             duration={500}
           >
-            Projects
+            {t("Projects")}
           </Link>
-          <a href="#" className="fill-Glaucous">
+          <a
+            href="https://github.com/bkolonics/portfolio"
+            className="fill-Glaucous"
+          >
             <IconContext.Provider
               value={{ size: "30px", className: "fill-Glaucous" }}
             >
