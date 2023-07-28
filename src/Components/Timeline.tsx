@@ -76,31 +76,19 @@ export default function Timeline() {
             {t("Timeline")}
           </h1>
           <TimelineInput
-            title="High School"
-            date="2015-2019"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-              aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-              placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-              nisl."
+            title="MiNET"
+            date="2021-2024"
+            description={t("MiNET")}
           />
           <TimelineInput
-            title="High School"
-            date="2015-2019"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-              aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-              placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-              nisl."
+            title="Institut Mines-Télécom Business School"
+            date="2021-2024"
+            description={t("IMTBS")}
           />
           <TimelineInput
-            title="High School"
-            date="2015-2019"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-              aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-              placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-              nisl."
+            title="Classe préparatoire aux grandes écoles"
+            date="2019-2021"
+            description={t("CPGE")}
           />
         </div>
       </>

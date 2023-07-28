@@ -1,4 +1,5 @@
 import { FC, PropsWithChildren, useEffect, useRef, useState, RefObject } from "react";
+import { useTranslation } from "react-i18next";
 
 
 interface ProjectsProps {
@@ -118,7 +119,7 @@ function ProjectsInput({title, category, status, description}: ProjectsProps) {
             <span className="font-semibold">Status: </span>
             {status}
           </div>
-          <div className="mb-24 text-justify dark:text-Columbia-blue">
+          <div className="text-justify dark:text-Columbia-blue">
             <p>{description}</p>
           </div>
         </div>
@@ -127,76 +128,57 @@ function ProjectsInput({title, category, status, description}: ProjectsProps) {
 }
 
 export default function Projects() {
+    const { t } = useTranslation();
     return (
       <>
         <div id="projects">
           <div className="flex justify-center">
             <div className="text-2xl lg:text-4xl font-bold text-Glaucous mb-10">
-              Projects
+              {t("Projects")}
             </div>
           </div>
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 overflow-hidden">
             <AnimateLeft>
               <ProjectsInput
-                title="High School"
-                category="Category"
-                status="On-going"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-                aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-                placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-                nisl."
+                title={t("Title project 1")}
+                category={t("Category project 1")}
+                status={t("Status project 1")}
+                description={t("Description project 1")}
               />
             </AnimateLeft>
             <AnimateUp>
               <ProjectsInput
-                title="High School"
-                category="Category"
-                status="On-going"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-                aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-                placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-                nisl."
+                title={t("Title project 2")}
+                category={t("Category project 2")}
+                status={t("Status project 2")}
+                description={t("Description project 2")}
               />
             </AnimateUp>
             <AnimateRight>
               <ProjectsInput
-                title="High School"
-                category="Category"
-                status="On-going"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-                aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-                placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-                nisl."
+                title={t("Title project 3")}
+                category={t("Category project 3")}
+                status={t("Status project 3")}
+                description={t("Description project 3")}
               />
             </AnimateRight>
             <AnimateLeft>
               <ProjectsInput
-                title="High School"
-                category="Category"
-                status="On-going"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-                aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-                placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-                nisl."
+                title={t("Title project 4")}
+                category={t("Category project 4")}
+                status={t("Status project 4")}
+                description={t("Description project 4")}
               />
             </AnimateLeft>
             <AnimateDown>
               <ProjectsInput
-                title="High School"
-                category="Cybersecurity"
-                status="On-going"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                faucibus, nunc nec aliquam placerat, diam quam mattis lorem, quis
-                aliquet massa sapien sed nisl. Sed faucibus, nunc nec aliquam
-                placerat, diam quam mattis lorem, quis aliquet massa sapien sed
-                nisl."
+                title={t("Title project 5")}
+                category={t("Category project 5")}
+                status={t("Status project 5")}
+                description={t("Description project 5")}
               />
             </AnimateDown>
-            <AnimateRight>
+            {/* <AnimateRight>
               <ProjectsInput
                 title="High School"
                 category="Category"
@@ -207,7 +189,7 @@ export default function Projects() {
                 placerat, diam quam mattis lorem, quis aliquet massa sapien sed
                 nisl."
               />
-            </AnimateRight>
+            </AnimateRight> */}
           </div>
         </div>
       </>
