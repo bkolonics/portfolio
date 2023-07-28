@@ -22,8 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# custom 
-src/assets/photo.jpg
-src/assets/photo.webp
-src/assets/photos/photo*
