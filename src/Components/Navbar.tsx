@@ -115,7 +115,10 @@ export default function Navbar() {
               <BsGithub />
             </IconContext.Provider>
           </a>
-          <a href="#" className="fill-Glaucous">
+          <a
+            href="https://www.linkedin.com/in/bence-kolonics"
+            className="fill-Glaucous"
+          >
             <IconContext.Provider
               value={{ size: "30px", className: "fill-Glaucous" }}
             >
