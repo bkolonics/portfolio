@@ -82,7 +82,10 @@ export default function Navbar() {
           <button className="text-lg text-Glaucous hidden sm:block">
             <ToggleButton />
           </button>
-          <a href="#" className="text-lg text-Glaucous">
+          <a
+            href="https://bkolonics.github.io/files/cv_bence_kolonics_fr.pdf"
+            className="text-lg text-Glaucous"
+          >
             {t("Resume")}
           </a>
           <Link
