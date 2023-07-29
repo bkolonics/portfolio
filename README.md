@@ -16,8 +16,8 @@ This website was built with
 - [React](https://react.dev/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [Vite](https://vitejs.dev/)
-- Typescript (superset of Javascript)
-- yarn (package manager)
+- [Typescript](https://www.typescriptlang.org/) (superset of Javascript)
+- [yarn](https://yarnpkg.com/) (package manager)
 - [Netlify](https://www.netlify.com/) for deployment and hosting
 
 ## Libraries
