@@ -86,7 +86,7 @@ export default function Timeline() {
             description={t("IMTBS")}
           />
           <TimelineInput
-            title="Classe préparatoire aux grandes écoles"
+            title="Classe préparatoire aux Grandes Écoles"
             date="2019-2021"
             description={t("CPGE")}
           />
