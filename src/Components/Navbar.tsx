@@ -98,8 +98,7 @@ export default function Navbar() {
             {t("Resume")}
           </a>
           <Link
-            href=""
-            className="text-lg text-Glaucous"
+            className="text-lg text-Glaucous cursor-pointer"
             to="timeline"
             spy={true}
             smooth={true}
@@ -108,8 +107,7 @@ export default function Navbar() {
             {t("Timeline")}
           </Link>
           <Link
-            href=""
-            className="text-lg text-Glaucous"
+            className="text-lg text-Glaucous cursor-pointer"
             to="projects"
             spy={true}
             smooth={true}
