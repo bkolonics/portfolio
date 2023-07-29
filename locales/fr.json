@@ -26,7 +26,7 @@
   "Status project 3": "Terminé",
   "//Project 4": "Project 4",
   "Title project 4": "Apprendre Kubernetes",
-  "Description project 4": "J'apprends de Kubernetes pour mieux gérer ma propre infrastructure. J'apprends à utiliser Kubernetes pour déployer mes propres applications et à utiliser le gestionnaire de paquet Helm pour déployer des applications. J'utilise Terraform pour déployer mon cluster Kubernetes sur ma propre infrastructure. J'héberge mon propre load balancer avec MetalLB. J'apprends également à utiliser Traefik comme contrôleur ingress.",
+  "Description project 4": "J'apprends Kubernetes pour mieux gérer ma propre infrastructure. J'apprends à utiliser Kubernetes pour déployer mes propres applications et à utiliser le gestionnaire de paquet Helm pour déployer des applications. J'utilise Terraform pour déployer mon cluster Kubernetes sur ma propre infrastructure. J'héberge mon propre load balancer avec MetalLB. J'apprends également à utiliser Traefik comme contrôleur ingress.",
   "Category project 4": "SysAdmin",
   "Status project 4": "En cours d'apprentissage",
   "//Project 5": "Project 5",
