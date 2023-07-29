@@ -25,3 +25,4 @@ This website was built with
 This project uses the following libraries
 - [React-Scroll](https://github.com/fisshy/react-scroll) for smooth scrolling
 - [React-Icons](https://github.com/react-icons/react-icons) for icons
+- [i18next](https://www.i18next.com/) for internationalization
