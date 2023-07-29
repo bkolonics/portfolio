@@ -118,6 +118,7 @@ export default function Navbar() {
             {t("Projects")}
           </Link>
           <a
+            aria-label="Github"
             href="https://github.com/bkolonics/portfolio"
             className="fill-Glaucous"
           >
@@ -128,6 +129,7 @@ export default function Navbar() {
             </IconContext.Provider>
           </a>
           <a
+            aria-label="Linkedin"
             href="https://www.linkedin.com/in/bence-kolonics"
             className="fill-Glaucous"
           >
