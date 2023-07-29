@@ -68,7 +68,10 @@ export default function Navbar() {
           <a href="#" className="lg:text-5xl text-2xl text-Glaucous px-2">
             Bence Kolonics
           </a>
-          <button className="text-lg text-Glaucous px-2 sm:hidden">
+          <button
+            aria-label="Toggle dark mode mobile"
+            className="text-lg text-Glaucous px-2 sm:hidden"
+          >
             <ToggleButton />
           </button>
           <a className="px-2 sm:hidden">
@@ -76,10 +79,16 @@ export default function Navbar() {
           </a>
         </div>
         <div className="flex sm:gap-5 justify-evenly">
-          <button className="hidden sm:block">
+          <button
+            aria-label="Show language dropdown menu"
+            className="hidden sm:block"
+          >
             <ToggleLanguage></ToggleLanguage>
           </button>
-          <button className="text-lg text-Glaucous hidden sm:block">
+          <button
+            aria-label="Toggle dark mode desktop"
+            className="text-lg text-Glaucous hidden sm:block"
+          >
             <ToggleButton />
           </button>
           <a
